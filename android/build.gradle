@@ -5,8 +5,9 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.1'
+        classpath 'com.android.tools.build:gradle:7.0.2'
     }
+
 }
 
 allprojects {
@@ -23,6 +24,7 @@ subprojects {
 subprojects {
     project.evaluationDependsOn(':app')
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir
